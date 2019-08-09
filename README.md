@@ -30,7 +30,7 @@ kubectl-eks:1.0
 ### 컨테이너 접속
 
 ```
-docker exec -it $(docker ps --filter=kubectl-eks -aq) /bin/bash
+docker exec -it $(docker ps --filter="name=kubectl-eks" -aq) /bin/bash
 
 > kubectl config view
 ...
